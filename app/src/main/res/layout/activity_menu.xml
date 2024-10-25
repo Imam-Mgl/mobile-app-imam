@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logocerah"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_minuman"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Item 1: Kopi -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/kopisusu"
+                    android:contentDescription="@string/kopi"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kopi_susu_rp_10_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractKopi"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvKopiCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddKopi"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Item 2: Teh -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/tehsusu"
+                    android:contentDescription="@string/teh"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teh_susu_rp_8_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractTeh"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvTehCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddTeh"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Item 3: ExtraJossusu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/extrajossusu"
+                    android:contentDescription="@string/extrajossusu"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/extrajoss_susu_rp_7_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractExtrajossusu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvExtrajossusuCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddExtrajossusu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Item 4: Susu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/susu"
+                    android:contentDescription="@string/susu"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/susu_rp_5_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractSusu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvSusuCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddSusu"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Item 5: Coklat Panas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/coklat"
+                    android:contentDescription="@string/coklat_panas"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coklat_panas_rp_20_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractCoklat"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvCoklatCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddCoklat"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Item 6: Es Teh -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/esteh"
+                    android:contentDescription="@string/es_teh"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/es_teh_rp_10_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractEsTeh"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvEsTehCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddEsTeh"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Item 7: Jeruk Peras -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/esjeruk"
+                    android:contentDescription="@string/jeruk_peras"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jeruk_peras_rp_12_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractJeruk"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvJerukCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddJeruk"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/eskopigulaaren"
+                    android:contentDescription="@string/es_kopi_gula_aren"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/es_kopi_gula_aren_rp_15_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractKopiGulaAren"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvKopiGulaArenCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddKopiGulaAren"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Item 9: Wedang Jahe -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/wedangjahe"
+                    android:contentDescription="@string/wedang_jahe"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wedang_jahe_rp_9_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractWedang"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvWedangCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddWedang"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Item 10: Milo Panas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/milo"
+                    android:contentDescription="@string/milo_panas"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/milo_panas_rp_15_000"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/btnSubtractMilo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/minus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvMiloCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddMilo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="@string/plus"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tampilkan_pesanan"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"/>
+
+</LinearLayout>
